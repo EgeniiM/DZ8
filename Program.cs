@@ -15,7 +15,7 @@ namespace DZ8
             int allWaiting;
             int waitHours;
             int waitMinutes;
-            int minInHours = 60;
+            int minutesInHours = 60;
             string input;
 
             Console.WriteLine("Вы заходите в поликлинику и видите огромную очередь из старушек.");
