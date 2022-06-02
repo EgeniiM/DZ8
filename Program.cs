@@ -12,18 +12,19 @@ namespace DZ8
         {
             int allPeople;
             int onePeopleWait = 10;
-            int allwaiting;
-            int hours;
-            int minutes;
+            int allWaiting;
+            int waitHours;
+            int waitMinutes;
+            int minInHours = 60;
             string input;
 
             Console.WriteLine("Вы заходите в поликлинику и видите огромную очередь из старушек.");
             Console.WriteLine("введите количество старушек:");
             input = Console.ReadLine();
             allPeople = Convert.ToInt32(input);
-            hours = (allPeople * onePeopleWait) / 60;
-            minutes = (allPeople * onePeopleWait) % 60;
-            Console.WriteLine($"Надо ждать {hours} часов и {minutes} минут.");
+            waitHours = (allPeople * onePeopleWait) / minInHours;
+            waitMinutes = (allPeople * onePeopleWait) % minInHours;
+            Console.WriteLine($"Надо ждать {waitHours} часов и {waitMinutes} минут.");
         }
     }
 }
