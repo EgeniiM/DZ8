@@ -22,8 +22,8 @@ namespace DZ8
             Console.WriteLine("введите количество старушек:");
             input = Console.ReadLine();
             allPeople = Convert.ToInt32(input);
-            waitHours = (allPeople * onePeopleWait) / minInHours;
-            waitMinutes = (allPeople * onePeopleWait) % minInHours;
+            waitHours = (allPeople * onePeopleWait) / minutesInHours;
+            waitMinutes = (allPeople * onePeopleWait) % minutesInHours;
             Console.WriteLine($"Надо ждать {waitHours} часов и {waitMinutes} минут.");
         }
     }
